@@ -1,0 +1,14 @@
+aws_region   = "us-east-1"
+project_name = "mcp"
+environment  = "prod"
+
+# aws sts get-caller-identity --query Account --output text
+aws_account_id = "398080922284"
+
+# From grocery-mcp .env (not a secret)
+kroger_client_id = "YOUR_KROGER_CLIENT_ID"
+
+# Optional until ACM cert exists
+# acm_certificate_arn = "arn:aws:acm:us-east-1:398080922284:certificate/..."
+
+grocery_mcp_image_tag = "latest"
