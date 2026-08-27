@@ -100,4 +100,8 @@ resource "aws_ecs_service" "grocery_mcp" {
     aws_lb_listener.http,
     aws_iam_role_policy.ecs_execution_secrets,
   ]
+
+  lifecycle {
+    ignore_changes = [task_definition]
+  }
 }
